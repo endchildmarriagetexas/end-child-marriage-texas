@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas Coalition to End Child Marriage</title>
+
+<style>
+:root{
+    --navy:#12355B;
+    --teal:#2A9D8F;
+    --gold:#E9C46A;
+    --light:#F5F5F5;
+    --white:#ffffff;
+    --dark:#333333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:var(--dark);
+}
+
+header{
+    background:var(--navy);
+    color:white;
+    padding:1rem 4%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.hero{
+    background:linear-gradient(rgba(18,53,91,.8),rgba(18,53,91,.8)),
+    url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin:15px 10px;
+    padding:12px 24px;
+    background:var(--gold);
+    color:var(--navy);
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:white;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--navy);
+    font-size:2rem;
+}
+
+.about, .resources{
+    background:var(--light);
+}
+
+.facts-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.fact-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.fact-card h3{
+    color:var(--teal);
+    margin-bottom:10px;
+}
+
+.story-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.story{
+    background:white;
+    padding:25px;
+    border-left:5px solid var(--teal);
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.actions{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.action-card{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:30px;
+    border-radius:10px;
+}
+
+.resource-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.resource-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+.resource-card ul{
+    padding-left:20px;
+}
+
+.join{
+    background:var(--teal);
+    color:white;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    background:var(--gold);
+    border:none;
+    padding:12px 25px;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:white;
+}
+
+footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<div class="logo">Texas Coalition to End Child Marriage</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#facts">Facts</a></li>
+<li><a href="#stories">Stories</a></li>
+<li><a href="#action">Take Action</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#join">Join</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Every Child Deserves a Childhood</h1>
+
+<p>
+We are a coalition of survivors, advocates, parents, faith leaders,
+educators, and community members working to end child marriage in Texas
+and protect the rights and futures of all children.
+</p>
+
+<a href="#join" class="btn">Join the Coalition</a>
+<a href="#action" class="btn">Take Action</a>
+</section>
+
+<section id="about" class="about">
+<h2 class="section-title">About Us</h2>
+
+<p>
+The Texas Coalition to End Child Marriage advocates for policies,
+education, and survivor support initiatives that protect children from
+being forced or pressured into marriage before adulthood.
+</p>
+
+<br>
+
+<h3>Our Mission</h3>
+<p>
+To educate Texans, support survivors, and advance laws that protect
+children from child marriage.
+</p>
+
+<br>
+
+<h3>Our Vision</h3>
+<p>
+A Texas where every child has the opportunity to complete their
+education, pursue their dreams, and decide their future free from
+coercion.
+</p>
+
+</section>
+
+<section id="facts">
+<h2 class="section-title">Why It Matters</h2>
+
+<div class="facts-grid">
+
+<div class="fact-card">
+<h3>Education</h3>
+<p>
+Child marriage can interrupt schooling and limit future educational
+opportunities.
+</p>
+</div>
+
+<div class="fact-card">
+<h3>Economic Impact</h3>
+<p>
+Early marriage can contribute to long-term financial hardship and reduced
+earning potential.
+</p>
+</div>
+
+<div class="fact-card">
+<h3>Health & Safety</h3>
+<p>
+Young people in early marriages may face increased risks related to
+mental health, domestic violence, and isolation.
+</p>
+</div>
+
+<div class="fact-card">
+<h3>Human Rights</h3>
+<p>
+Children deserve the right to grow, learn, and make life-altering
+decisions as adults.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="stories" class="about">
+<h2 class="section-title">Survivor Voices</h2>
+
+<div class="story-container">
+
+<div class="story">
+<h3>Survivor Story #1</h3>
+<p>
+Share survivor stories here with permission. Personal experiences can
+help educate communities and lawmakers.
+</p>
+</div>
+
+<div class="story">
+<h3>Survivor Story #2</h3>
+<p>
+Highlight the impact of child marriage and the importance of legal
+protections for minors.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="action">
+<h2 class="section-title">Take Action</h2>
+
+<div class="actions">
+
+<div class="action-card">
+<h3>Contact Legislators</h3>
+<p>
+Ask elected officials to support stronger protections for children.
+</p>
+</div>
+
+<div class="action-card">
+<h3>Volunteer</h3>
+<p>
+Help with community outreach, education, and advocacy efforts.
+</p>
+</div>
+
+<div class="action-card">
+<h3>Share Information</h3>
+<p>
+Raise awareness through social media and local events.
+</p>
+</div>
+
+<div class="action-card">
+<h3>Donate</h3>
+<p>
+Support survivor outreach and public education campaigns.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="resources" class="resources">
+<h2 class="section-title">Resources</h2>
+
+<div class="resource-list">
+
+<div class="resource-card">
+<h3>For Survivors</h3>
+<ul>
+<li>Legal Assistance</li>
+<li>Counseling Resources</li>
+<li>Crisis Support</li>
+<li>Safety Planning</li>
+</ul>
+</div>
+
+<div class="resource-card">
+<h3>For Parents</h3>
+<ul>
+<li>Teen Relationship Resources</li>
+<li>Family Support Services</li>
+<li>Educational Materials</li>
+</ul>
+</div>
+
+<div class="resource-card">
+<h3>For Professionals</h3>
+<ul>
+<li>Educator Resources</li>
+<li>Healthcare Information</li>
+<li>Training Materials</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="join" class="join">
+<h2 class="section-title" style="color:white;">Join the Coalition</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Organization (Optional)">
+
+<input type="text" placeholder="County">
+
+<select>
+<option>Select Your Interest</option>
+<option>Advocacy</option>
+<option>Volunteer</option>
+<option>Education</option>
+<option>Legal Support</option>
+<option>Media Outreach</option>
+</select>
+
+<textarea rows="5" placeholder="Tell us how you'd like to help"></textarea>
+
+<button type="submit">Join the Coalition</button>
+
+</form>
+</section>
+
+<footer>
+<p>
+Texas Coalition to End Child Marriage © 2026
+</p>
+
+<p>
+Together, we can protect every child's right to a safe and free future.
+</p>
+</footer>
+
+</body>
+</html>
